@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <title></title>
+  <style>
+    body{background: #2c2c2c;}
+    h3{color:#fff;}
+    .main{position:relative;}
+    .bg-video{
+      position: absolute;
+      z-index:-1;
+      width:100%;
+    }
+    .box{
+      width:600px;
+      min-height: 400px;
+      background: rgba(255,255,255,.7);
+      border-radius:5px;
+      margin:100px auto;
+      padding:1.5em;
+    }
+     .col-sm-3 {
+        width: 18%;
+      }
+    #bt-register{
+      margin-left:8px;
+    }
+    img{
+      position: absolute;
+      top: 6px;
+      left: -6px;
+    }
+  </style>
+</head>
+<body>
+<!--头部-->
+<div class="container">
+  <h3>明月刀 | 欢迎注册</h3>
+</div>
+<!--主体：用户注册表单-->
+<div class="container main">
+  <!--<video class="bg-video" src="res/bgmvedio.mp4" autoplay loop muted></video>-->
+  <img class="bg-video" src="res/bgmvedio.gif" alt=""/>
+  <div class="box">
+    <!--验证是否用户名已存在-->
+    <h6 id="tipMsg" style="color:red"></h6>
+    <form class="form-horizontal">
+      <!--用户名-->
+      <div class="form-group">
+        <div class="col-sm-3">
+          <label class="control-label" for="uname">用&nbsp;户&nbsp;名：</label>
+        </div>
+        <div class="col-sm-5">
+          <input class="form-control" id="uname" placeholder="请输入您想注册的用户名"/>
+        </div>
+        <div class="col-sm-4">
+          <img src="" alt=""/>
+          <span class="help-block" id="unamex">用户名可以包含数字或字母</span>
+        </div>
+      </div>
+      <!--密码-->
+      <div class="form-group">
+        <div class="col-sm-3">
+          <label class="control-label" for="upwd">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+        </div>
+        <div class="col-sm-5">
+          <input class="form-control" id="upwd" placeholder="请输入您想注册的密码">
+        </div>
+        <div class="col-sm-4">
+          <img src="" alt=""/>
+          <span class="help-block upwdx">密码长度在6~12位之间</span>
+        </div>
+      </div>
+      <!--确认密码-->
+      <div class="form-group">
+        <div class="col-sm-3">
+          <label class="control-label" for="upwd1">确认密码：</label>
+        </div>
+        <div class="col-sm-5">
+          <input class="form-control" id="upwd1" placeholder="请输入确认密码"/>
+        </div>
+        <div class="col-sm-4">
+          <img src="" alt=""/>
+          <span class="help-block upwd1x"></span>
+        </div>
+      </div>
+      <!--注册按钮-->
+      <div class="form-group">
+        <div class="col-sm-5 col-sm-offset-2">
+          <input id="bt-register" class="btn btn-success btn-block" type="button" value="注册"/>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!--尾部-->
+<div class="container"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

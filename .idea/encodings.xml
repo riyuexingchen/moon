@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/gw/data/footer.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gw/data/gw.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gw/data/header.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gw/data/login.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gw/data/register.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gw/js/hf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gw/js/login.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gw/js/register.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/data/footer.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/data/gx.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/data/header.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/data/login.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/data/register.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/js/hf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/js/login.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/js/login.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/js/register.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gx/js/register.js" charset="UTF-8" />
+  </component>
+</project>

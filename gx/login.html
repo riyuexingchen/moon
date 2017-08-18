@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!--<link rel="icon" href="img/favicon.ico"/>-->
+
+    <script src="js/jquery-1.11.3.js"></script>
+
+    <title></title>
+    <style>
+        body{background: #2c2c2c;}
+        h3{color:#fff;}
+        .main {
+            position: relative;
+        }
+        .bg-video {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+        }
+        .box {
+            width: 600px;
+            min-height: 400px;
+            background: rgba(255,255,255, .7);
+            border-radius: 5px;
+            margin: 100px auto;
+            padding: 1.5em;
+        }
+        img{
+            position: absolute;
+            top: 6px;
+            left: -6px;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="container">
+    <h3>明月刀 | 用户登录</h3>
+</div>
+<!--主体-->
+<div class="container main">
+    <!--<video class="bg-video" src="res/bgmvedio.mp4" autoplay loop muted></video>-->
+    <img class="bg-video" src="res/bgmvedio.gif" alt=""/>
+    <div class="box">
+        <form class="form-horizontal">
+            <!--用户名-->
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label class="control-label" for="uname">用户名：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input class="form-control" id="uname" placeholder="请输入您的用户名"/>
+                </div>
+                <div class="col-sm-5">
+                    <img src="" alt=""/>
+                    <span class="help-block unamex">用户名不能包含数字或字母之外的字符</span>
+                </div>
+            </div>
+            <!--密码-->
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label class="control-label" for="upws">密码：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input id="upwd" class="form-control" type="text" placeholder="请输入密码"/>
+                </div>
+                <div class="col-sm-5">
+                    <img src="" alt=""/>
+                    <span class="help-block upwdx">密码长度在6~12位之间</span>
+                </div>
+            </div>
+            <!--登录按钮-->
+            <div class="form-group">
+                <div class="col-sm-5 col-sm-offset-2">
+                    <input id="bt-login" class="btn btn-success btn-block" type="button" value="登录"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

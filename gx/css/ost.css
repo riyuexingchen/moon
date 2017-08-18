@@ -1,0 +1,369 @@
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,div,input,video,sup,table{margin:0;padding:0;}
+ul,ol{list-style:none;}
+img{border:0;vertical-align:middle;}
+a{color:#fff;text-decoration:none;outline:none;hide-focus:expression(this.hideFocus=true);}
+em,i{font-style:normal;}
+table{
+    /*设置相邻单元格的边框间的距离（仅用于“边框分离”模式）。*/
+    border-spacing:0;
+    /*设置表格的边框是否被合并为一个单一的边框*/
+    border-collapse:collapse;
+}
+thead,tbody{vertical-align: middle;border-color: inherit;}
+thead {display: table-header-group;}
+tbody {display: table-row-group;}
+tr,td,th{vertical-align: inherit;}
+tr {display: table-row;border-color: inherit;}
+td, th {display: table-cell;}
+.hid{display:none;}
+.loading{
+    width:100px;
+    position:absolute;
+    left:0;top:50%;
+    margin:-14px 0 0;
+}
+.mrn{margin-top:15px;}
+.pa{position:absolute;}
+body{
+    /*background:#202020;*/
+    font:14px/1.5 "\5FAE\8F6F\96C5\9ED1",arial;
+    color:#353535;
+    /*width:100%;min-width:1001px;*/
+    /*-webkit-text-size-adjust:none;,"microsoft yahei"
+    -ms-text-size-adjust:none;*/
+    margin: 0 auto;
+}
+
+/*style*/
+header,section,footer{display:block;}
+header,.head,.feet,.sevunits,.other{width:100%;margin:0 auto;}
+.ost_box{
+    color:#464646;
+    font-family: 'Tahoma','simsun';
+}
+.head{
+    max-width: 1920px;
+    min-width: 1280px;
+}
+/*0:modal模态框*/
+/*1：鼠标移入显示放大图*/
+
+/*3:轮播图加索引*/
+/*轮播图样式*/
+.eventsbox .bnsbox{position:relative;}
+.bnsbox .rotate_content{
+    position:absolute;
+    top:0;left:0;
+    height:280px;
+}
+.bnsbox .rotate_content li{
+    /*display:block;*/
+    float:left;
+    z-index:0;
+}
+/*索引样式*/
+.bnsbox .rotate_number{
+    position:absolute;;
+    bottom:15px;right:30px;
+}
+.bnsbox .rotate_number li{
+    display:block;
+    float:left;
+    width:14px;height:5px;
+    background:#9B9B9B;
+    border-radius: 20%;
+    margin-left:10px;
+}
+.bnsbox .rotate_number li:hover,
+.bnsbox .rotate_number li.hover{background:#2fc3a3;}
+
+/*视频播放模态框样式*/
+/*模态框背景*/
+.masklayer{
+    display: none;
+    position: fixed;
+    top:0;left:0;
+    width:100%;height: 100%;
+    background: #000;
+    opacity:.7;
+    z-index:998;
+}
+/*视频框*/
+.layerdt{
+    display: none;
+    position:fixed;
+    top:50%;left:50%;
+    width:790px;
+    margin:-225px 0 0 -395px;
+    z-index: 10001;
+}
+.layerdt .lydt{
+    position: relative;
+    width:100%;height: 450px;
+    background-color: #000;
+}
+#curVideoPlay{
+    width:100%;
+}
+/*退出*/
+.exitlayer{
+    position: absolute;
+    top:0;right:-60px;
+    width:60px;height: 60px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    background: #2fc3a3;
+}
+
+/*下载客户端模态框*/
+/*1:模态框背景*/
+.overlay{
+    display: none;
+    background-color:rgba(17,17,17,.7);
+    /*border-top:1px solid rgb(17,17,17);*/
+    position: absolute;
+    top:0;left:0;
+    width:100%;height:3091px;
+    z-index:9998;
+}
+/*2:模态框内容*/
+.eventlayer{
+    display: none;
+    /*position: absolute;*/
+    position: fixed;
+    top:120px;left:50%;
+    background: #fff;
+    margin:0 0 100px -393px;
+    visibility: visible;
+    z-index:10000;
+}
+/*上*/
+.eventlayer .tabs{
+    position: relative;
+    background: #101010;
+    height:53px;
+    z-index: 5;
+}
+.eventlayer .taba{
+    position:relative;
+    display: block;
+    float:left;
+    line-height: 53px;
+    width:393px;
+    text-align: center;
+    font-weight: bold;
+    color:#a0a0a0;
+    font-size: 16px;
+}
+.eventlayer .cur{
+    background-color: #2fc3a3;
+    color:#fff;
+}
+/*小三角*/
+.eventlayer .cur:after{
+    position:absolute;
+    left:50%;bottom:-8px;
+    content: "";
+    margin:0 0 0 -8px;
+    width:0;height: 0;
+    border-top:8px solid #2fc3a3;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+}
+/*中*/
+.eventlayer .tabc{
+    position: relative;
+    /*clear:both;*/
+    width:100%;height: 399px;
+}
+/*中1*/
+.eventlayer .tabt,.eventlayer .tabt img{
+    width:100%;height: 100%;
+}
+.eventlayer .tabt{
+    position: absolute;
+    top:0;left:0;
+}
+.eventlayer .tabt .linkbtn{
+    display: block;
+    position: absolute;
+    top:0;
+    width:196px;height: 100%;
+    /*text-indent: -9999px;*/
+}
+.eventlayer .tabt .linkbtn1{left:0;}
+.eventlayer .tabt .linkbtn2{left:196px;}
+.eventlayer .tabt .linkbtn3{left:392px;}
+.eventlayer .tabt .linkbtn4{left:588px;}
+/*中2*/
+.spr-ly{background-image: url(../imgs/spr-ly.png);}
+.eventlayer .spctabt{
+    display: none;
+    background: url(../imgs/ly-3.jpg) no-repeat 50% 50%;
+}
+.svslist{
+    padding:50px 0 0 90px;
+    overflow: hidden;
+}
+.svslist .svs{
+    float:left;
+    position:relative;
+    margin:20px 40px 0 0;
+    width:174px;height: 74px;
+    background-position: 0 -28px;
+    text-align: center;
+}
+.svslist .are{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 60px;
+    overflow: hidden;
+}
+.svslist .svn{
+    display: block;
+    line-height: 100%;
+    margin:-15px 0 0 0;
+    font-size:13px;
+    font-weight: normal;
+    color:#101010;
+}
+/*左上角图标*/
+.svslist .tag{
+    display: block;
+    width:26px;height: 28px;
+    top:-10px;left:-8px;
+    text-indent: -9999px;
+    background-position: 0 0;
+    background-repeat:no-repeat;
+}
+/*下*/
+.eventlayer .todlgame{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    height: 91px;
+    background-position: 0 100%;
+    font-weight: bold;
+    line-height: 207%;
+    overflow:hidden;
+}
+.stips{
+    display: block;
+    color:#2b1c1c;
+    font-size:16px ;
+    line-height: 100%;
+    cursor:pointer;
+}
+/*退出按键*/
+.eventlayer .exitlayer{
+    top:45px;
+    background:none;
+}
+
+/*游戏礼盒模态框*/
+#giftlayer .taba{width:196px;}
+#giftlayer .taba.cur{width:198px;}
+/*中1div>ul*/
+.levelgift{
+    position:absolute;
+    top:16px;left:21px;
+    width:756px;height: 370px;
+    font-size:13px;
+    z-index:10;
+}
+.levelgift .ls{
+    position: relative;
+    float:left;
+    width:243px;height: 118px;
+    margin: 0 9px 8px 0;
+    z-index:11;
+}
+.levelgift .ls .glist{
+    display: none;
+    box-shadow:0 -3px 5px rgba(0,0,0,.3);
+    position: absolute;
+    left:50%;bottom:80px;
+    z-index: 12;
+    margin:0 0 0 -137px;
+    padding: 10px;
+    width:255px;
+    background: rgba(255,255,255,.9);
+}
+/*rgba(255,255,255,.9)*/
+.levelgift .ls .glist:after{
+    position: absolute;
+    left:50%;bottom:-8px;
+    z-index: 12;
+    content: "";
+    margin:0 0 0 -8px;
+    width:0;height: 0;
+    border-top:8px solid rgba(255,255,255,.9);
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+}
+.levelgift .glist table {
+    width: 100%;
+}
+.levelgift .glist table td {
+     width: 50%;
+}
+/*中1div>u2*/
+.eventlayer .tabt h4{
+    color:#2fc3a3;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    padding:10px 0 0;
+}
+.linelist{
+    padding: 0 20px;
+    margin: 20px 0 0;
+    font-size: 13px;
+}
+.eventlayer .linelist .ls{
+    margin:3px 0;
+    background: #f8f2e6;
+    line-height: 33px;
+}
+.eventlayer .linglist .ls b,
+.eventlayer .linelist .ls em{
+    display: inline-block;
+}
+.eventlayer .linelist .ls b{
+    width:90px;
+    text-align: center;
+    background: #ff8f17;
+    color:#fff;
+    margin:0 20px 0 0;
+    padding: 8px 29px;
+}
+.eventlayer .linelist .ls em {
+    width: 125px;
+}
+.eventlayer .linelist .ls .money {
+    width: 80px;
+}
+/*中1div>u3*//*中1div>u4*/
+.eventlayer .tabt .giftlists{padding:0 20px;}
+.eventlayer .tabt .gifttable {
+    width: 100%;
+    text-align: center;
+}
+.eventlayer .innergifttable {
+    width: 100%;
+    font-size: 13px;
+    line-height: 28px;
+}
+.eventlayer .innergifttable th {
+    color: #fff;
+    background: #ff8f17;
+}
+.eventlayer .innergifttable td {
+    background: #f8f2e6;
+    border-bottom: 1px solid #e1dacc;
+}

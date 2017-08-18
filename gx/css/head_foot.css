@@ -1,0 +1,76 @@
+/*头部header #top*/
+#top{
+    border-top:1px solid #C9C9C9;
+    border-bottom:1px solid #E7EAEC;
+    background-color:#fff;
+    width:100%;height:41px;
+}
+#top_box{line-height:40px;}
+#top_box>li{
+    float:left;
+    top:0;
+}
+li.top_logo{
+    position: relative;
+    z-index:5;
+}
+li.top_logo>a{
+    display:inline-block;
+    width:220px;height:32px;
+    background:url(../imgs/ost-bg.png) no-repeat  0 -44px;
+    margin-left:210px;
+    margin-top:4px;
+}
+/*导航栏：广告*/
+li.top_ad{position: relative;}
+/*导航栏：广告放大图*/
+li.top_ad .bgad{
+    position: absolute;
+    top:0;left:-216px;
+}
+li.top_ad .bgad>a{display:none;}
+li.top_ad:hover .bgad>a{display: block;}
+li.top_prt{margin-left:10%;}
+li.top_prt a{
+    padding:4px 0 0 21px;
+    display:inline-block;
+    background: url(../imgs/hlogo.png) no-repeat 0 0;
+    line-height: 100%;
+}
+li.top_login{margin-left:60px;}
+li.top_login .hrgi:hover{color:#cf2f2d;}
+li.top_login .hlgi:hover{color:#cf2f2d;}
+
+/*尾部footer footer_ied*//*<!--页面底部-->*/
+.footer_ied{
+    width: 100%;
+    height: 230px;
+    padding:35px 0 45px;
+    font:12px/1.5 Tahoma,'\5b8b\4f53';
+    overflow:hidden;
+    text-align: center;
+}
+.footer_box{
+    display: inline-block;
+    width: 944px;
+}
+.footer_box .wrap_logo{
+    float: left;
+    width: 300px;
+    height: 60px;
+}
+.wrap_logo .tg{
+    float:left;
+    width:300px;height:43px;
+    background:url(../imgs/bottom_logo.png) no-repeat;
+    margin:15px 30px auto 0;
+}
+.wrap_ied{
+    float:left;
+    padding:2px 0 2px 11px;
+    width:609px;
+    border-left:1px solid #4f4f4f;
+    color:#4f4f4f;
+}
+.flks a,i,.ftce,.ftcc a,.ftot span,.ftot i,.ftot a{color:#4f4f4f;}
+.ftcc{float:right;}
