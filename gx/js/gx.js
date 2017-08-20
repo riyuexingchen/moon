@@ -246,6 +246,7 @@ $(".hvideo").click(function(){
     $(".masklayer").show();
     $(".layerdt").show();
     $(".exitlayer").click(function(){
+        curVideoPlay.pause();
         $(".masklayer").hide();
         $(".layerdt").hide();
     });
